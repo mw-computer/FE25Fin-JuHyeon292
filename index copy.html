@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>웹화면구현:김똘똘-ㅇㅇㅇ클로닝</title>
+	<style>
+		/* 기본 스타일 */
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav {
+			background-color: #333;
+		}
+
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		ul.menu {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.menu-item {
+			position: relative;
+		}
+
+		.menu-item>button {
+			width: 100%;
+			background-color: #333;
+			color: white;
+			border: none;
+			padding: 15px;
+			text-align: left;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		.submenu {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+			max-height: 0;
+			overflow: hidden;
+			background-color: #f4f4f4;
+			transition: max-height 0.3s ease;
+		}
+
+		.submenu.open {
+			max-height: 500px;
+			/* 충분한 값 */
+		}
+
+		.submenu li a {
+			display: block;
+			padding: 10px 20px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.submenu li a:hover {
+			background-color: #ddd;
+		}
+
+		/* 2단 서브메뉴 */
+		.second {
+			background-color: #e9e9e9;
+			padding-left: 20px;
+		}
+
+		/* 반응형 */
+		@media (min-width: 768px) {
+			.menu {
+				display: flex;
+			}
+
+			.menu-item {
+				flex: 1;
+			}
+
+			.menu-item>button {
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="container">
+			<!-- 상단 서랍식 드롭다운 메뉴 -->
+			<ul class="menu">
+				<li class="menu-item">
+					<button class="menu-toggle" data-target="submenu1">메뉴 1</button>
+					<ul class="submenu" id="submenu1">
+						<li><a href="#">서브메뉴 1</a></li>
+						<li><a href="#">서브메뉴 2</a></li>
+						<li>
+							<a href="#">서브메뉴 3</a>
+							<ul class="submenu second">
+								<li><a href="#">2단 서브메뉴 1</a></li>
+								<li><a href="#">2단 서브메뉴 2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item">
+					<button class="menu-toggle" data-target="submenu2">메뉴 2</button>
+					<ul class="submenu" id="submenu2">
+						<li><a href="#">서브메뉴 A</a></li>
+						<li><a href="#">서브메뉴 B</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+		<div class="container">
+			<h1>웹화면 구현</h1>
+			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
+		</div>
+	</main>
+	<section>
+		<div class="container">
+			<h2>섹션1</h2>
+			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h2>섹션2</h2>
+			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h2>섹션3</h2>
+			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<h2>섹션4</h2>
+			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>© 2023 김똘똘. All rights reserved.</p>
+			//TODO: 본인의 닉네임, 이메일 주소, 저작권 표시 등을 작성하세요.
+			//FIXME: 특히, 가져온 그림에 대한 저작권 표시를 반드시 작성하세요.
+		</div>
+	</footer>
+
+	<!-- JavaScript (서랍 열기 기능) -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const toggles = document.querySelectorAll('.menu-toggle');
+			toggles.forEach(btn => {
+				btn.addEventListener('click', () => {
+					const target = document.getElementById(btn.dataset.target);
+					target.classList.toggle('open');
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>
