@@ -4,83 +4,128 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>웹화면구현:김똘똘-ㅇㅇㅇ클로닝
-		//TODO: 타이틀에 본인 이름 넣기
-	</title>
-	<link rel="stylesheet" href="style.css">
+	<title>웹화면구현:장주현 </title>
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-	<nav>
-		<div class="container">
-			//TODO: 메뉴 완성하기 (상단메뉴바 또는 사이드메뉴바) + 화면 사이즈에 따라 반응형으로 변경되도록 구현하기
-			<nav>
-				<div class="container">
-					<ul class="menu">
-						<li class="menu-item">
-							<a href="#">메뉴 1</a>
-							<ul class="submenu">
-								<li><a href="#">서브메뉴 1</a></li>
-								<li><a href="#">서브메뉴 2</a></li>
-								<li>
-									<a href="#">서브메뉴 3</a>
-									<ul class="submenu second">
-										<li><a href="#">2단 서브메뉴 1</a></li>
-										<li><a href="#">2단 서브메뉴 2</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="menu-item">
-							<a href="#">메뉴 2</a>
-							<ul class="submenu">
-								<li><a href="#">서브메뉴 A</a></li>
-								<li><a href="#">서브메뉴 B</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</nav>
+<!-- 왜 저장이 안되지 -->
+<header>
+  <div class="logo">목원대학교 컴퓨터공학과</div>
+  <div class="top-links">
+    <a href="#">로그인</a>
+    <a href="#">교내사이트</a>
+    <a href="#">사이트맵</a>
+  </div>
+</header>
 
-		</div>
-	</nav>
-	<main>
-		<div class="container">
-			<h1>웹화면 구현</h1>
-			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
-		</div>
-	</main>
-	<section>
-		<div class="container">
-			<h2>섹션1</h2>
-			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2>섹션2</h2>
-			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2>섹션3</h2>
-			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<h2>섹션4</h2>
-			//TODO: 여기에 본인이 구현하고자 하는 내용을 작성하세요.
-		</div>
-	</section>
-	<footer>
-		<div class="container">
-			<p>© 2023 김똘똘. All rights reserved.</p>
-			//TODO: 본인의 닉네임, 이메일 주소, 저작권 표시 등을 작성하세요.
-			//FIXME: 특히, 가져온 그림에 대한 저작권 표시를 반드시 작성하세요.
-		</div>
-	</footer>
+<nav class="nav-wrapper">
+  <div class="nav-menu">
+    <a>학과안내</a>
+    <a>교수소개</a>
+    <a>학사안내</a>
+    <a>특성화사업</a>
+    <a>학생활동</a>
+    <a>커뮤니티</a>
+  </div>
+
+  <div class="mega-menu">
+    <div class="menu-column">
+      <h3>학과안내</h3><hr />
+      <a href="#">학과소개</a>
+      <a href="#">연혁</a>
+      <a href="#">취업진로</a>
+      <a href="#">특성화전략</a>
+      <a href="#">학과시설</a>
+      <a href="#">위치 및 연락처</a>
+    </div>
+    <div class="menu-column">
+      <h3>교수소개</h3><hr />
+      <a href="#">컴퓨터공학과</a>
+    </div>
+    <div class="menu-column">
+      <h3>학사안내</h3><hr />
+      <a href="#">교과과정</a>
+      <a href="#">교과목소개</a>
+      <a href="#">졸업요건</a>
+      <a href="#">학사일정</a>
+      <a href="#">직무기술서</a>
+    </div>
+    <div class="menu-column">
+      <h3>특성화사업</h3><hr />
+      <a href="#">SW인재양성사업</a>
+      <a href="#">SW전문인재양성 교육과정</a>
+      <a href="#">IPPA사업 안내</a>
+    </div>
+    <div class="menu-column">
+      <h3>학생활동</h3><hr />
+      <a href="#">학생회</a>
+      <a href="#">동아리정보</a>
+      <a href="#">학술제작품</a>
+      <a href="#">교내외수상</a>
+    </div>
+    <div class="menu-column">
+      <h3>커뮤니티</h3><hr />
+      <a href="#">공지사항</a>
+      <a href="#">강의자료실</a>
+      <a href="#">포토갤러리</a>
+      <a href="#">홍보동영상</a>
+    </div>
+  </div>
+</nav>
+
+<section class="main-visual">
+  <h1>BEYOND YOURSELF,<br>ONE STEP AHEAD!</h1>
+</section>
+
+<section class="quick-links">
+  <div class="item">위치 및 연락처</div>
+  <div class="item">학과시설</div>
+  <div class="item">학사일정</div>
+  <div class="item">특성화 전략</div>
+  <div class="item">동아리 정보</div>
+  <div class="item">학술제작품</div>
+</section>
+
+<section class="news-section">
+  <div class="news-left">
+    <h2>NEWS</h2>
+    <div class="news-item">
+      <div class="news-date">27<br>2025-05</div>
+      <div class="news-content"><a href="#">[1~4학년 대상] 실전 역량 점검! PCSQL 코딩테스트 안내</a></div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">23<br>2025-05</div>
+      <div class="news-content"><a href="#">[중요] 2025 SW중심대학 디지털 경진대회 참가신청 안내</a></div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">20<br>2025-05</div>
+      <div class="news-content"><a href="#">[필독] 2025년 SW아카데미사업 종료! 웹프론트엔드과정 마지막 신청</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="department-info">
+  <div class="info-buttons">
+    <button>개인정보방침</button>
+    <button>이메일무단수집거부</button>
+    <button>대학정보공시</button>
+    <button>오시는길</button>
+  </div>
+</section>
+
+<div class="floating-buttons">
+  <button class="floating-button"><span class="small-text">주요<br>서비스</span></button>
+  <button class="floating-button">학사</button>
+  <button class="floating-button scroll-top" onclick="scrollToTop()">↑</button>
+</div>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
 </body>
 
 </html>
